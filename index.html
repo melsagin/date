@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Tarih Dönüşüm Fonksiyonu</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+ 
+<body>
+    <h2>İki Tarih Arasındaki Gün</h2>
+    <input type="date" id="userDate">
+    <input type="button" id="Click_me" value="Click me">
+    <div id="result"></div>
+    <script src="./date.js"></script>
+     
+
+<script>
+    var dateObject=document.getElementById("userDate");
+    var clickBtn=document.getElementById("Click_me");
+ 
+    //tıklama olayına kacGunSonra metodunu bağlıyoruz. 
+    //burada metod çalışmadığı için parantez olmaz.
+    clickBtn.onclick=kacGunSonra;
+</script>
+</body>
+</html>
+ 
